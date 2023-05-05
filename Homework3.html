@@ -12,6 +12,10 @@
             padding: 15px;
          }
 
+         .flex-container{
+            display: flex;
+         }
+
          .column{
             float: left;
             padding: 15px;
@@ -19,12 +23,11 @@
 
          .menu{
             width: 25%;
-            
          }
 
          .content{
             width: 75%;
-            
+            float:inherit;
          }
 
          .menu li{
@@ -33,29 +36,70 @@
             background-color: #33b5e5;
             color: #ffffff;
          }
+
+        .navigation ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+         }
+
+         .navigation li{
+            float: left;
+         }
+
+         .navigation li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+         }
+
+         .navigation li a:hover{
+            background-color: #111;
+         }
+
+         .active{
+            background-color: red;
+         }
         </style>
     </head>
     <body>
+
     <div class="header">
        <h1>Chania</h1>
     </div>
 
-    <div class="column menu">
+    <div class="navigation">
         <ul>
-            <li>The Flight</li>
-            <li>The City</li>
-            <li>The Island</li>
-            <li>The Food</li>
+            <li><a href="#Home" class="active">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
         </ul>
     </div>
 
-    <div class="column content">
-        <h1>The City</h1>
-        <p>Chania is the capital of the Chania region on the island of Crete</p>
+    <div class="flex-container">
+        <div class="column menu">
+            <ul>
+                <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li>
+            </ul>
+        </div>
+    
+        <div class="column content">
+            <h1>The City</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete</p>
+        </div>
     </div>
 
     <div class="footer">
         <p>Footer Text</p>
     </div>
+
     </body>
 </html>
