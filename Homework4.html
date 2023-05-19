@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .navigation{
+                display:flex;
+
+            }
+            .navigation ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 80;
+            overflow: hidden;
+            }
+
+            .navigation li{
+            float: left;
+            font-size: 22px;
+            text-align: center;
+
+            }
+
+            .navigation li a,span{
+                display: inline-block;
+                text-align: center;
+                padding: 22px 30px;
+                text-decoration: none;
+                color: grey;
+            }
+
+            .dropbtn {
+                color: gray;
+                padding: 22px 30px;
+                font-size: 22px;
+                border: none;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: gray;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                float: none;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            input[type="text"]{
+                width: 130px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('mirror.png');
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                transition: width 0.4s ease-in-out;
+                padding: 12px 20px 12px 40px;
+                margin-top: 20%;
+                margin-left: 30%;
+            }
+            
+            body{
+                background-image: url(azrthg87pvc63egv9s77o03nkncenxse.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            img{
+                width:165px;
+                height: 80px;
+            }
+
+            input[type=text]:focus {
+                width: 40%;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        
+        <div class="navigation">
+            <img src="logo.png">
+            <ul>
+                <li><a href="#picture" class="active">picture</a></li>
+                <li><a href="#video">video</a></li>
+                <div class="dropdown">
+                    <span class="dropbtn">more</span>
+                    <div class="dropdown-content">
+                        <a href="#map">map</a>
+                        <a href="#news">news</a>
+                        <a href="#...">...</a>
+                      </div>
+                </div>
+            </ul>
+        </div>
+        
+        <form>
+            <input type="text" name="search" >
+        </form>
+        
+
+    </body>
+</html>
