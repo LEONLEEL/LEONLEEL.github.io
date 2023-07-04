@@ -1,0 +1,285 @@
+body{
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* 首行缩进 */
+p{
+    text-indent: 2em;
+}
+
+/* 分享链接 */
+#header{
+    background-color: white;
+    text-align: center;
+    width:100%;
+    display: inline-block;
+    position: fixed;/* 使该模块不随画面移动 */
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/* 横向列表 */
+.icons{
+    float: right;
+    margin: auto;
+}
+
+.icons li{
+    display: inline;
+    margin: 20px;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+strong{
+    font-size: 50px;
+}
+
+/* 添加LOGO图标 */
+.icons li:first-child::before{
+    content:"";/* 设置空元素 */
+    background: url(twitter.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    top: 16px;
+    right:8px;
+
+}
+
+.icons li:nth-child(2)::before{
+    content: "";
+    background: url(facebook.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    top:14px;
+    right: 8px;
+}
+
+.icons li:nth-child(3)::before{
+    content: "";
+    background: url(snapchat.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    top:17px;
+    right: 8px;
+}
+
+.icons li:nth-child(4)::before{
+    content: "";
+    background: url(inscolor.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    top:11px;
+    right: 8px;
+}
+
+/* 网页头部内容 */
+#banner{
+    text-align: center;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+h1{
+    font-size: 100px;
+    padding: 0;
+    margin-top:50px;
+    margin-bottom: 10px;
+}
+
+/* 网页头部文本 */
+#banner .content{
+    float: left;
+    width: 50%;
+    padding-left: 200px;
+}
+
+#banner p{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* 网页头部图片 */
+#banner span{
+    float: right;
+    margin: 80px;
+}
+
+/* 网页头部按钮 */
+#banner ul{
+    margin-left: 500px;
+}
+
+.major{
+    width: 100%;
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+    border: 1px solid lightgreen;
+}
+
+/* 网页左栏 */
+#sidebar #search,#sidebar #menu,#sidebar section{
+    width: 15%;
+    background-color: white;
+    padding: 30px;
+}
+
+/* 网页中栏 */
+#main section:nth-child(3),#main section:nth-child(4){
+    float: right;
+    width: 60%;
+    margin: 17px;
+    padding: 30px;
+    margin-top: 0;
+    background-color: white;
+}
+
+/* 网页右栏 */
+#main section:nth-child(3){
+    float: right;
+    width: 15%;
+    background-color: white;
+    margin-right: 0;
+}
+
+/* 设置文本框样式 */
+input{
+    width: 100px;
+    height: 30px;
+    transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+    width: 100%;
+}
+
+/* 设置菜单样式 */
+#menu ul{
+    list-style-type: none;
+    background-color: #f0fff0;
+    margin-top: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+
+#menu li{
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+}
+
+#menu a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+/* 突出显示所选项 */
+#menu a:hover{
+    color: lightgreen;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 设置联系方式样式 */
+.contact{
+    background-color: #f0fff0;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact li{
+    padding: 10px;
+}
+
+/* 网页中栏内容卡片样式 */
+.posts article{
+    background-color: #f0fff0;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 50px;
+    height: 260px;
+}
+
+.posts h3{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+.posts p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.posts .image{
+    float: right;
+}
+
+/* 设置按钮样式 */
+.actions{
+    list-style-type: none;
+    width:200px;
+    text-align: center;
+    padding: 0;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+}
+
+.actions a{
+    text-decoration: none;
+    color: lightgreen;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+/* 响应悬浮 */
+.actions a:hover{
+    background-color:lightgreen;
+    color: white;
+}
+
+/* 设置产品特点标题样式 */
+.features h3{
+    border-bottom:5px solid lightgreen;
+    border-left:5px solid lightgreen ;
+    padding: 8px;
+}
+
+/* 设置页脚 */
+#footer{
+    bottom: 0;
+    float: left;
+    text-align: center;
+    padding-left: 900px;
+}

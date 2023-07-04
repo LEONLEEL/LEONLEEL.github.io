@@ -1,0 +1,303 @@
+body{
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* 首行缩进 */
+p{
+    text-indent: 2em;
+}
+
+/* 网页左栏 */
+#sidebar #search,#sidebar #menu,#sidebar section{
+    float: right;
+    width: 12%;
+    background-color: white;
+    padding: 30px;
+}
+
+/* 网页右栏 */
+#main{
+    float: left;
+    width: 82%;
+    background-color: white;
+    padding: 30px;
+}
+ /* 分享链接 */
+#header{
+    float: left;
+    background-color: #ffa07a;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.icons{
+    float: right;
+    margin: auto;
+}
+
+.icons li{
+    display: inline;
+    margin: 20px;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+strong{
+    font-size: 50px;
+}
+
+.icons li:first-child::before{
+    content:"";
+    background: url(twitter.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    top: 16px;
+    right:8px;
+
+}
+
+.icons li:nth-child(2)::before{
+    content: "";
+    background: url(facebook.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    top:14px;
+    right: 8px;
+}
+
+.icons li:nth-child(3)::before{
+    content: "";
+    background: url(snapchat.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    top:17px;
+    right: 8px;
+}
+
+.icons li:nth-child(4)::before{
+    content: "";
+    background: url(inscolor.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    top:11px;
+    right: 8px;
+}
+
+#banner{
+    text-align: center;
+    margin-top:0;
+    display: inline-block;
+}
+
+h1{
+    font-size: 90px;
+    padding: 0;
+    margin-top:50px;
+    margin-bottom: 10px;
+}
+
+/* 网页头部内容 */
+#banner .content{
+    float: left;
+    width: 40%;
+    padding-left: 200px;
+}
+
+#banner p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+#banner span{
+    float: right;
+    margin-top: 50px;
+}
+
+#banner ul{
+    margin-left: 300px;
+}
+
+/* 设置模块标题样式 */
+.major{
+    border-bottom: 5px solid #ff6347;
+    padding-bottom: 0;
+}
+
+/* 设置产品特点模块样式 */
+#main section:nth-child(3){
+    background-color:#ffa07a;
+    padding: 30px;
+    height: 370px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    
+}
+
+/* 使不同特点块状排列 */
+.features .content:first-child{
+    float: left;
+    width: 50%;
+}
+
+.features .content:nth-child(2){
+    float:right;
+    width: 50%;
+}
+
+.features h3{
+    width: fit-content;
+    background-color: #ff6347;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+}
+
+/* 设置商品模块样式 */
+#main section:nth-child(4){
+    background-color:#ffa07a;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    height: 1400px;
+}
+
+/* 使商品模块卡片化 */
+.posts article{
+    background-color: #f0fff0;
+    margin: 45px;
+    border-radius: 20px;
+    padding: 50px;
+    height: 260px;
+    float: left;
+    width: 40%;
+}
+
+.posts h3{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+.posts p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.posts .image{
+    float: right;
+}
+
+/* 设置按钮样式 */
+.actions{
+    list-style-type: none;
+    width:200px;
+    text-align: center;
+    padding: 0;
+}
+
+.actions a{
+    text-decoration: none;
+    color: #ff6347;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.actions a:hover{
+    background-color:#ff6347;
+    color: white;
+}
+
+/* 设置输入框样式 */
+input{
+    width: 100px;
+    height: 30px;
+    transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+    width: 100%;
+}
+
+/* 设置菜单样式 */
+#menu ul{
+    list-style-type: none;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 30px;
+    padding-left: 0;
+}
+
+#menu li{
+    text-align: center;
+    height: 40px;
+    background-color: #ffa07a;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom:0 ;
+    width: 100%;
+}
+
+#menu a{
+    text-decoration: none;
+    display: block;
+    color:white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#menu li:hover{
+    background-color: #ff6347;
+}
+
+.contact{
+    background-color: #ffa07a;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact li{
+    padding: 10px;
+}
+
+/* 设置页脚 */
+#footer{
+    bottom: 0;
+    float: left;
+    text-align: center;
+    padding-left: 900px;
+}
