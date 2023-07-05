@@ -200,6 +200,11 @@ h1{
     width: 40%;
 }
 
+/* 响应式卡片阴影 */
+.posts article:hover{
+    box-shadow: 10px 10px #ff6347;
+}
+
 .posts h3{
     font-size: 50px;
     margin-top: 0;
