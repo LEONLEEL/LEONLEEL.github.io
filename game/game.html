@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>带魄罗回家</title>
+    <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+    <div id="gameArea">
+        <!-- 魄罗、饼干、雪花等元素将在这里动态生成 -->
+    </div>
+    <div id=startPopup class="popup">
+        <h1 id="title">带魄罗回家</h1>
+        <button class="btn" id="playBtn">PLAY</button>
+        <button class="btn" id="rankBtn">RANK</button>
+        <button class="btn" id="ruleBtn">RULE</button>
+    </div>
+
+    <div id="rulePopup" class="popup" style="display: none; z-index: 1;">
+        <h2>游戏规则说明</h2>
+        <p>向魄罗投掷“魄罗佳肴”饼干（每秒只可以投掷一次饼干哦~），命中魄罗后有一定概率收获魄罗的“芳心”，让魄罗跟你回家，并可获得5个游戏积分。</p>
+        <p>在这片充满魔法的雪地，天空中不定时飘落下的雪花也被赋予了特殊的魔法能量。</p>
+        <p><span id="redp">红色</span>的雪花会赋予你爱心魔法能量，大幅提高收获魄罗“芳心”的概率。</p>
+        <p><span id="yellowp">黄色</span>的雪花会赋予你速度魔法能量，提升你投掷饼干的速度。</p>
+        <p><span id="bluep">蓝色</span>的雪花会凝聚冰雪魔法能量，使雪地上的魄罗行动速度减缓。</p>
+        <p><span id="greenp">绿色</span>的雪花会凝聚植物魔法能量，为你制造10个“魄罗佳肴”饼干。</p>
+        <p>每次游戏时长为150秒，你手中拥有的“魄罗佳肴”饼干初始数量为50个，当游戏时间结束或者饼干被消耗完时，游戏结束。</p>
+        <h2>快把魄罗抱回家吧！</h2>
+        
+        <button class="close-btn" id="ruleCloseBtn">返回</button>
+    </div>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
