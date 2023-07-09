@@ -527,7 +527,7 @@ function snowing(){
            }
 
            var createGreen = setInterval(addGreen, 300);
-           updateScoreAndCount(remainingCookies+=5)
+           updateScoreAndCount(remainingCookies+=10)
            function updateScoreAndCount(score) {
             scoreBoard.textContent = '游戏积分：' + score;
             cookieCount.textContent = '剩余饼干数量：' + remainingCookies;
