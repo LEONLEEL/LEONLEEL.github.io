@@ -91,7 +91,7 @@ function generateGhosts() {
 
            }, appearanceTime)
         }
-    }, 200)
+    }, 150)
    
    throwCookie();
 }
