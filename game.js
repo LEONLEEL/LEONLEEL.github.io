@@ -53,8 +53,8 @@ function generateGhosts() {
    for (var i = 0; i < initialGhosts; i++) {
        var ghost = document.createElement('div');
        ghost.className = 'ghost';
-       ghost.style.left = Math.random() * 2500 + 'px'; // 随机生成魄罗的横坐标
-       ghost.style.top = Math.random() * 1300 + 'px'; // 随机生成魄罗的纵坐标
+       ghost.style.left = Math.random() * 2400 + 'px'; // 随机生成魄罗的横坐标
+       ghost.style.top = Math.random() * 1200 + 'px'; // 随机生成魄罗的纵坐标
        gameArea.appendChild(ghost);
        ghosts.push(ghost)
        moveGhost(ghost)
@@ -76,8 +76,8 @@ function generateGhosts() {
        if(createTime < 0.8){
            var ghost = document.createElement('div');
            ghost.className = 'ghost';
-           ghost.style.left = Math.random() * 2500 + 'px'; // 随机生成魄罗的横坐标
-           ghost.style.top = Math.random() * 1300 + 'px'; // 随机生成魄罗的纵坐标
+           ghost.style.left = Math.random() * 2400 + 'px'; // 随机生成魄罗的横坐标
+           ghost.style.top = Math.random() * 1200 + 'px'; // 随机生成魄罗的纵坐标
            gameArea.appendChild(ghost);
            ghosts.push(ghost)
            moveGhost(ghost)
@@ -111,7 +111,7 @@ function moveGhost(g) {
        currentY += deltaY;
        ghost.style.left = currentX + 'px';
        ghost.style.top = currentY + 'px';
-       if (currentX < gameAreaRect.left-5|| currentX > gameAreaRect.right-200|| currentY < gameAreaRect.top+10|| currentY > gameAreaRect.bottom-200) {
+       if (currentX < gameAreaRect.left-1|| currentX > gameAreaRect.right-220|| currentY < gameAreaRect.top+10|| currentY > gameAreaRect.bottom-200) {
            ghost.remove(); // 如果魄罗接触到边框，将其从游戏区域中移除
            return;
        }

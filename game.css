@@ -1,0 +1,240 @@
+/* 设置游戏区域的样式 */
+#gameArea {
+    position: relative;
+    width: 2400px;
+    height: 1300px;
+    text-align: center;
+    background: url(gameArea.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border: 3px solid #000;
+    cursor: crosshair;
+}
+
+/* 设置魄罗的样式 */
+.ghost {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:0 auto;
+    background: url(poluo.png) no-repeat;
+    background-size:150px 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.cookiepoluo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:0 auto;
+    background: url(cookiepoluo.png) no-repeat;
+    background-size:150px 150px;
+    width: 150px;
+    height: 150px;
+}
+
+/* 设置饼干的样式 */
+.cookie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(cookie.png) no-repeat;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    position: absolute;
+    top:0;
+    background: url("red.png") no-repeat;
+    background-size:120px 100px;
+    width: 120px;
+    height: 100px;
+}
+
+.yellow{
+    position: absolute;
+    top:0;
+    background: url("yellow.png") no-repeat;
+    background-size: 120px 100px;
+    width: 120px;
+    height: 100px;
+}
+
+.blue{
+    position: absolute;
+    top:0;
+    background: url("blue.png") no-repeat;
+    background-size: 120px 100px;
+    width: 120px;
+    height: 100px;
+}
+
+.green{
+    position: absolute;
+    top:0;
+    background: url("green.png") no-repeat;
+    background-size: 120px 100px;
+    width: 120px;
+    height: 100px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: url("popup.png") no-repeat;
+    background-size: 900px 600px;
+    width: 900px;
+    height: 600px;
+    color: white;
+    font-size: larger;
+    }
+
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    right:1100px;
+    padding-top: 47px;
+    padding-left: 0;
+    background:url("board.png") no-repeat;
+    background-size: 200px 100px;
+    width: 200px;
+    height: 100px; 
+    color: black;
+    font-weight: bolder;
+    font-size: 25px; 
+}
+
+#cookieCount{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    padding-top: 50px;
+    padding-left: 0;
+    background:url("board.png") no-repeat;
+    background-size: 200px 100px;
+    width: 200px;
+    height: 100px; 
+    color: black;
+    font-weight: bolder;
+    font-size: larger; 
+}
+
+/* Styles for the timer */
+#timer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 50px;
+    padding-left: 0;
+    background:url("board.png") no-repeat;
+    background-size: 200px 100px;
+    width: 200px;
+    height: 100px; 
+    color: black;
+    font-weight: bolder;
+    font-size: larger; 
+}
+
+#title{
+    padding-top: 120px;
+    font-size: 100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background:url("button.png") no-repeat;
+    background-size: 120px 60px;
+    width: 120px;
+    height: 60px;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin: 40px;
+    margin-top: 50px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    font-size: 16px;
+    background:url("button.png") no-repeat;
+    background-size: 80px 40px;
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+#rankList{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("ranklist.jpg") no-repeat;
+    border-radius: 20px;
+    background-size: 250px 800px;
+    width: 250px;
+    height: 800px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#rulePopup p{
+    text-indent: 2em;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.ranktext{
+    padding-top: 15px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+
+h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#redp{
+    color: #dc143c;
+}
+
+#yellowp{
+    color: #ffd700;
+}
+
+#greenp{
+    color: #00ff7f;
+}
+
+#bluep{
+    color: #00bfff;
+}
+
+h1{
+    padding-top: 80px;
+    font-size: 50px;
+}
